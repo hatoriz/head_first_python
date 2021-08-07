@@ -1,10 +1,13 @@
 vowels = ['a', 'e', 'i', 'o', 'u']
 
-word = "Nathdanai"
+word = "Haaatoriz"
+found = []
 
 for letter in word:
     if letter in vowels:
-        print(letter)
+        if letter not in found:
+            found.append(letter)
 
-
-#------
+print("Print only vowel")
+for vowel in found:
+    print(vowel)
